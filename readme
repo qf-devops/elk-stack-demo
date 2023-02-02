@@ -28,3 +28,6 @@ setup elk:
 git lcone https://github.com/qf-devops/docker-elastic.git
 cd docker-elastic
 sh deployStack.sh
+
+
+http://13.233.151.6/app/home#/tutorial_directory/sampleData
