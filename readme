@@ -28,6 +28,7 @@ setup elk:
 git lcone https://github.com/qf-devops/docker-elastic.git
 cd docker-elastic
 
+docker node ls 
 Edit deployStack.sh:
 
             #!/bin/bash
