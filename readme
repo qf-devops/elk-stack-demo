@@ -15,6 +15,13 @@ docker exec -it es-node01 /usr/share/elasticsearch/bin/elasticsearch-reset-passw
 token:
 docker exec -it es-node01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 
+filebeat:
+sudo docker pull docker.elastic.co/beats/filebeat:8.6.1
+sudo docker run -itd --name filebeat01 -\ 
+docker.elastic.co/beats/filebeat:8.6.1 \
+setup -E setup.kibana.host=10.117.4.173:80 \
+-E output.elasticsearch.hosts=["10.117.4.173:9200"]
+
 
 
 install docker:
