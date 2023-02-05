@@ -1,3 +1,6 @@
 kibana dashbaord:
 
 https://demo.elastic.co/app/dashboards#/view/welcome_dashboard?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))
+
+
+https://www.sarulabs.com/post/5/2019-08-12/sending-docker-logs-to-elasticsearch-and-kibana-with-filebeat.html
