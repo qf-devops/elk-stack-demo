@@ -1,5 +1,8 @@
 kibana dashbaord:
 
+
+docker-compose up -d
+
 https://demo.elastic.co/app/dashboards#/view/welcome_dashboard?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))
 
 
