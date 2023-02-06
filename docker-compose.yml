@@ -19,14 +19,14 @@ services:
     image: "docker.elastic.co/beats/filebeat:7.2.0"
     user: root
     volumes:
-      - /root/elk/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - /root/elk-stack-demo/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
       - /var/lib/docker:/var/lib/docker:ro
       - /var/run/docker.sock:/var/run/docker.sock
   metricbeat:
     image: "docker.elastic.co/beats/metricbeat:7.2.0"
     user: root
     volumes:
-      - /root/elk/metricbeat.yml:/usr/share/filebeat/metricbeat.yml:ro
+      - /root/elk-stack-demo/metricbeat.yml:/usr/share/filebeat/metricbeat.yml:ro
       - /var/lib/docker:/var/lib/docker:ro
       - /var/run/docker.sock:/var/run/docker.sock
 
