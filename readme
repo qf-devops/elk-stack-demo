@@ -54,3 +54,11 @@ sh deployStack.sh
 
 
 http://13.233.151.6/app/home#/tutorial_directory/sampleData
+
+
+docker-compose:
+1.ensure filebeat.yml and metricbeat.yml path set in docker-compose.yml
+2. enusre readonly mode these two yml files(metricnbeta.yml , filebeat.yml)
+3. docker-compose -f docker-compose.yml up -d
+4. docker-compose ps
+
