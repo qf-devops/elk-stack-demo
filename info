@@ -1,0 +1,3 @@
+kql timesatampe example to filter:
+
+@timestamp <= "now-1d/d+13h"
