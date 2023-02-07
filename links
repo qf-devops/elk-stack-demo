@@ -8,3 +8,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-nodes-in
 
 overview of felebeat:
 https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html
+
+
+nodes:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/delayed-allocation.html
