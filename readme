@@ -15,6 +15,7 @@ docker exec -it es-node01 /usr/share/elasticsearch/bin/elasticsearch-reset-passw
 token:
 docker exec -it es-node01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 
+docker exec -it kib-01 bash bin/kibana-verification-code
 filebeat:
 curl -L -O https://raw.githubusercontent.com/elastic/beats/8.6/deploy/docker/filebeat.docker.yml
 docker run -d \
