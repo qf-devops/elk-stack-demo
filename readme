@@ -37,7 +37,7 @@ sudo apt update
 sudo apt  install docker.io
 sudo chown ubuntu:ubuntu /var/run/docker.sock
 sudo sysctl -w vm.max_map_count=262144
-
+sudo echo 'vm.max_map_count=262144' >> /etc/sysctl.conf
 
 setup elk:
 git lcone https://github.com/qf-devops/docker-elastic.git
