@@ -1,0 +1,7 @@
+
+Ref: https://gigi.nullneuron.net/gigilabs/filebeat-elasticsearch-and-kibana-with-docker-compose/
+https://bitbucket.org/dandago/gigilabs/src/master/FekDockerCompose/test.log
+ 
+sudo echo 'vm.max_map_count=262144' >> /etc/sysctl.conf
+
+docker compose up -d
