@@ -1,0 +1,32 @@
+
+
+xpack.security.authc.realms.saml.kibana-realm:
+            order: 2
+            attributes.principal: nameid
+            attributes.groups: "http://schemas.microsoft.com/ws/2008/06/identity/claims/groups"
+            idp.metadata.path: "https://login.microsoftonline.com/tenentid/federationmetadata/2007-06/federationmetadata.xml?appid=appid"
+            idp.entity_id: "https://sts.windows.net/tenentid/"
+            sp.entity_id: "https://devo-logs.kb.us-east-2.aws.elastic-cloud.com:9243"
+            sp.acs: "https://devo-logs.kb.us-east-2.aws.elastic-cloud.com:9243/api/security/saml/callback"
+            sp.logout: "https://devo-logs.kb.us-east-2.aws.elastic-cloud.com:9243/logout"
+
+
+
+
+xpack.security.authc.providers:
+  saml.kibana-realm:
+    order: 0
+    realm: kibana-realm
+    description: "Log in with Azure AD"
+
+
+
+PUT /_security/role_mapping/saml-example
+{
+  "roles": [ "superuser" ], 
+  "enabled": true,
+  "rules": {
+    "field": { "realm.name": "kibana-realm" }
+  }
+}
+
