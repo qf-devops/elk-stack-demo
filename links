@@ -12,3 +12,8 @@ https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html
 
 nodes:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/delayed-allocation.html
+
+
+saml:
+https://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-saml-azure.html
+
