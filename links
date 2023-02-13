@@ -23,3 +23,5 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-
 upgrade es:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html#multi-match-types
 
+repos:
+https://github.com/qf-devops/complete-guide-to-elasticsearch.git
