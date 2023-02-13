@@ -17,3 +17,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/delayed-allocati
 saml:
 https://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-saml-azure.html
 
+query DSL:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html#multi-match-types
+
+upgrade es:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html#multi-match-types
+
