@@ -25,3 +25,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-
 
 repos:
 https://github.com/qf-devops/complete-guide-to-elasticsearch.git
+
+search:
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-body.html#request-body-search-post-filter
