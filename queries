@@ -1,0 +1,98 @@
+# Click the Variables button, above, to create your own variables.
+
+PUT filebeat-8.6.1-000001
+{
+  "aliases": {
+    "filebeat-8.6.1": {
+      "is_write_index": true
+    }
+  }
+}
+
+GET /filebeat-8.6.1-000001/_search
+GET _alias/filebeat-8.6.1
+POST filebeat-8.6.1/_rollover
+{
+  "conditions": {
+    "max_age": "1d",
+    "max_docs": 40,
+    "max_primary_shard_size": "100mb",
+    "max_primary_shard_docs": "200"
+  }
+}
+
+
+GET ${exampleVariable1} // _search
+{
+  "query": {
+    "${exampleVariable2}": {} // match_all
+  }
+}
+
+PUT /inspections
+
+GET /inspections
+
+PUT /inspections/_settings
+{
+"index" : {
+"number_of_replicas":1
+}
+}
+
+GET /test-index/_search/size=50
+
+POST /test-index/_doc
+{
+    "author": "author_name",
+    "text": "Interensting content..."
+}
+
+GET test-index
+
+GET  test-index/_search
+{
+  "query": {
+    "terms": {
+      "_id": [ "y-ZKU4YB6Gc1xeq_oTHY" ] 
+    }
+  }
+}
+
+GET test-index/_search?size=25
+{
+  "query":{
+    
+    "match_all": {}
+  }
+}
+
+
+
+
+POST /inspections/_doc
+{
+    "business_address" : "660 Sacramento St",
+    "business_city" : "San Francisco",
+    "business_id" : "2230",
+    "business_latitude" : "37.793698",
+    "business_location" : {
+        "type": "Point",
+        "coordinates" : [
+        -122.403984,
+        37.793698
+        ]
+    },
+    "business_longitude" : "-122.403984",
+    "business_name" : "Tokyo Express",
+    "business_postal_code" : "94111",
+    "business_state" : "CA",
+    "inspection_date" : "2023-02-09T00:00:00.000",
+    "inspection_id" : "2228_20160204",
+    "inspection_type" : "Routine",
+    "inspection_score" : 96,
+    "risk_category" : "Low Risk",
+    "violation_description" : "Unclean nonfood contact surfaces",
+    "violation_id" : "2228_20160204_103142"
+}
+
