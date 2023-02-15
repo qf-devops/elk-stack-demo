@@ -96,3 +96,12 @@ POST /inspections/_doc
     "violation_id" : "2228_20160204_103142"
 }
 
+GET /test-index/_search?q=author:ravi
+GET test-index/_search?size=50
+{"query": {
+    "term": {
+      "author": {
+        "value": "ravi"       
+      }
+    }
+  }}
