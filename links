@@ -1,3 +1,9 @@
+fluentd:
+
+https://www.fluentd.org/guides/recipes/docker-logging
+ref: https://www.digitalocean.com/community/tutorials/how-to-centralize-your-docker-logs-with-fluentd-and-elasticsearch-on-ubuntu-16-04
+
+
 index:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-body.html#request-body-search-search-after
 
